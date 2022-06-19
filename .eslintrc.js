@@ -8,10 +8,15 @@ module.exports = {
     '@vue/standard'
   ],
   parserOptions: {
-    parser: '@babel/eslint-parser'
+    parser: '@babel/eslint-parser',
+    // eslint-disable-next-line quote-props
+    'requireConfigFile': false
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    quotes: 'off',
+    semi: 'off',
+    'comma-dangle': 'off'
   }
 }
