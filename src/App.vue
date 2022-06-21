@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <i class="iconfont icon-gengduo"></i>
     <router-view />
   </div>
 </template>
